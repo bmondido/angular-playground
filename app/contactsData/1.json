@@ -1,5 +1,7 @@
 {
     "id": 1,
-    "name": "Brian",
-    "email": "mondido@gmail.com"
+    "firstName": "Brian",
+    "lastName": "Mondido",
+    "email": "mondido@gmail.com",
+    "phoneNumber": "1234567890"
 }
