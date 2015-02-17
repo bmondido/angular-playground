@@ -13,7 +13,7 @@
     </head>
     <body>
         <ul class="menu">
-            <li><a href="#/contacts">contacts</a></li>
+            <li><a href="#/contacts">Contacts</a></li>
         </ul>
 
         <div ng-view></div>
@@ -21,8 +21,11 @@
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>
         <script src="app.js"></script>
+        <!-- contacts -->
+        <script src="src/contacts/ContactsConfig.js"></script>
+        <script src="src/contacts/services/ContactFactory.js"></script>
         <script src="src/contacts/controllers/ContactsCtrl.js"></script>
         <script src="src/contacts/controllers/ContactDetailsCtrl.js"></script>
-        <script src="src/contact/ContactService.js"></script>
+
     </body>
 </html>

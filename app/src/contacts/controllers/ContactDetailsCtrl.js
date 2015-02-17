@@ -1,3 +1,7 @@
-/**
- * Created by bmondido on 02/13/2015.
- */
+(function(){
+    'use strict';
+    angular.module('app.contacts').
+        controller('ContactDetailsCtrl', ['$scope', function($scope){
+
+        }]);
+})();
