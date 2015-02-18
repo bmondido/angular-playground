@@ -1,9 +1,10 @@
 <div>
+    <!-- query object allows the below filter to make a subset the contacts array on the fly. Radical! -->
     Search: <input ng-model="query">
 </div>
 <div>
     <ul class="contacts">
-        <!-- use ng-repeat to loop over each contact in the scope object-->
+        <!-- use ng-repeat to loop over each contact in the scope object -->
         <li ng-repeat="contact in contacts | filter:query">
             <a href="#/contacts/{{contact.id}}">{{contact.firstName}}</a>
         </li>

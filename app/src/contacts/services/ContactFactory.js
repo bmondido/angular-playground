@@ -7,9 +7,11 @@
                 var service = {};
 
                 service.getContacts = function(){
+                    //familiar promises
                     var deferred = $q.defer();
                     $http({
                         method: 'GET',
+                        //call the appropriate API
                         url: 'contactsData/allContacts.json'
                     }).success(function(data){
                         deferred.resolve(data.contacts);
