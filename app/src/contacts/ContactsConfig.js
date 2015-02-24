@@ -10,6 +10,10 @@
             when('/contacts/:contactId', {
                 templateUrl: 'src/contacts/templates/ContactDetails.html',
                 controller: 'ContactDetailsCtrl'
-            })
+            }).
+            when('/newcontact', {
+                    templateUrl: 'src/contacts/templates/CreateContact.html',
+                    controller: 'CreateContactCtrl'
+            });
         }]);
 })();
