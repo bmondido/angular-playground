@@ -5,7 +5,7 @@
             function($scope,$routeParams,ContactFactory){
                 $scope.masterContact = {};
                 $scope.contact = {};
-                ContactFactory.getContact($routeParams.contactId).then(function(data){
+                ContactFactory.getContact(parseInt($routeParams.contactId)).then(function(data){
                     $scope.masterContact = data;
                     $scope.contact = angular.copy($scope.masterContact);
                 }, function(error){
