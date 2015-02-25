@@ -1,18 +1,31 @@
 <div class="contact-form">
-    <form novalidate class="simple-form">
-        <div class="name">
-            <label for="contact-first-name">First Name: </label>
-            <input id="contact-first-name" ng-model="contact.firstName"/>
-            <label for="contact-last-name">Last Name: </label>
-            <input id="contact-last-name" ng-model="contact.lastName"/>
-        </div>
-        <div class="email">
-            <label for="contact-email">Email: </label>
-            <input id="contact-email" ng-model="contact.email"/>
-        </div>
+    <form novalidate name="contactForm" class="simple-form">
+        <md-input-group>
+            <div class="name">
+                <md-input-container>
+                    <label for="contact-first-name">First Name: </label>
+                    <input id="contact-first-name" name="firstName" ng-model="contact.firstName" required/>
+                </md-input-container>
+                <span class="form-invalid" ng-show="contactForm.firstName.$error.required">First Name is required</span>
+                <md-input-container>
+                    <label for="contact-last-name">Last Name: </label>
+                    <input id="contact-last-name" name="lastName" ng-model="contact.lastName" required/>
+                </md-input-container>
+                <span class="form-invalid" ng-show="contactForm.lastName.$error.required">Last Name is required</span>
+            </div>
+            <div class="email">
+                <md-input-container>
+                    <label for="contact-email">Email: </label>
+                    <input id="contact-email" type="email" name="email" ng-model="contact.email" required/>
+                </md-input-container>
+                <span class="form-invalid" ng-show="contactForm.email.$error.required">Email is required</span>
+                <span class="form-invalid" ng-show="contactForm.email.$error.email">Invalid email</span>
+            </div>
+        </md-input-group>
+
         <div class="controls">
             <md-button class="md-primary" ng-click="reset()">Reset</md-button>
-            <md-button class="md-primary" ng-click="saveContact()">Save</md-button>
+            <md-button type="submit" class="md-primary" ng-disabled="contactForm.$invalid" ng-click="saveContact()">Save</md-button>
         </div>
     </form>
 </div>
