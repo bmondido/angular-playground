@@ -5,14 +5,16 @@
             "firstName": "Brian",
             "lastName": "Mondido",
             "email": "mondido@gmail.com",
-            "phoneNumber": "1234567890"
+            "phoneNumber": "1234567890",
+            "image": "contactsData/awesome.jpg"
         },
         {
             "id": 1,
             "firstName": "Edward",
             "lastName": "Blohm",
             "email": "blohm@gmail.com",
-            "phoneNumber": "7894561230"
+            "phoneNumber": "7894561230",
+            "image": "contactsData/awesome.jpg"
         }
     ]
 }

@@ -3,5 +3,6 @@
     "firstName": "Edward",
     "lastName": "Blohm",
     "email": "blohm@gmail.com",
-    "phoneNumber": "7894561230"
+    "phoneNumber": "7894561230",
+    "image": "contactsData/awesome.jpg"
 }

@@ -6,11 +6,12 @@
     </md-input-container>
 </div>
 <div>
-    <md-list>
-        <md-item ng-repeat="contact in contacts | filter:query">
-            <div class="contact-list-item">
-                <md-button class="md-primary" ng-href="#/contacts/{{contact.id}}">{{contact.firstName}}</md-button>
-            </div>
-        </md-item>
-    </md-list>
+    <md-content>
+        <md-grid-list md-cols="2" md-row-height="4:3">
+            <md-grid-tile ng-repeat="contact in contacts | filter:query">
+                <md-grid-tile-header>{{contact.firstName}}</md-grid-tile-header>
+                <a ng-href="#/contacts/{{contact.id}}"><img ng-src="{{contact.image}}"> </a>
+            </md-grid-tile>
+        </md-grid-list>
+    </md-content>
 </div>

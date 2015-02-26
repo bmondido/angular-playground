@@ -27,3 +27,14 @@
 .form-invalid{
     color:red;
 }
+
+.contact-list-item{
+    margin-bottom:10px;
+    margin-left:5px;
+}
+
+.list-button{
+    min-width: 10em;
+    background: #003cb3;
+    color:white;
+}
