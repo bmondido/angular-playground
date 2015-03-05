@@ -55,6 +55,9 @@
                 };
 
                 service.saveContact = function(newContact){
+                    if(newContact.image === undefined){
+                        newContact.image = 'contactsData/awesome.jpg';
+                    }
                     var deferred = $q.defer();
                     var exists = false;
                     for(var i = 0; i < contacts.length; i++){
