@@ -5,7 +5,7 @@
             "firstName": "Brian",
             "lastName": "Mondido",
             "email": "mondido@gmail.com",
-            "phoneNumber": "1234567890",
+            "phoneNumber": 1234567890,
             "image": "contactsData/awesome.jpg"
         },
         {
@@ -13,8 +13,32 @@
             "firstName": "Edward",
             "lastName": "Blohm",
             "email": "blohm@gmail.com",
-            "phoneNumber": "7894561230",
+            "phoneNumber": 7894561230,
             "image": "contactsData/awesome.jpg"
+        },
+        {
+          "id": 2,
+          "firstName": "Stella",
+          "lastName": "Artois",
+          "email": "sartois@gmail.com",
+          "phoneNumber": 4957824567,
+          "image": "contactsData/awesome.jpg"
+        },
+        {
+          "id": 3,
+          "firstName": "Robert",
+          "lastName": "DeSable",
+          "email": "rdesable@gmail.com",
+          "phoneNumber": 4987315498,
+          "image": "contactsData/awesome.jpg"
+        },
+        {
+          "id": 4,
+          "firstName": "Vaati",
+          "lastName": "Vidya",
+          "email": "vvidya@gmail.com",
+          "phoneNumber": 1237894560,
+          "image": "contactsData/awesome.jpg"
         }
     ]
 }

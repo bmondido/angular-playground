@@ -13,16 +13,12 @@
         <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-        <md-content>
-            <md-toolbar>
-                <md-button ng-href="#/contacts">Contacts</md-button>
-                <md-button ng-href="#/newcontact">Create-a-Contact</md-button>
-            </md-toolbar>
-        </md-content>
-
-
+        <md-toolbar style="position:fixed;">
+            <md-button ng-href="#/contacts">Contacts</md-button>
+            <md-button ng-href="#/newcontact">Create-a-Contact</md-button>
+        </md-toolbar>
         <!-- works with the $route service to switch the views -->
-        <div ng-view></div>
+        <div style="padding-top:82px;" ng-view></div>
 
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>

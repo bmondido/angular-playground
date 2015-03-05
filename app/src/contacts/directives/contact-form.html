@@ -1,27 +1,34 @@
 <div class="contact-form">
     <form novalidate name="contactForm" class="simple-form">
-        <md-input-group>
-            <div class="name">
-                <md-input-container>
-                    <label for="contact-first-name">First Name: </label>
-                    <input id="contact-first-name" name="firstName" ng-model="contact.firstName" required/>
-                </md-input-container>
-                <span class="form-invalid" ng-show="contactForm.firstName.$error.required">First Name is required</span>
-                <md-input-container>
-                    <label for="contact-last-name">Last Name: </label>
-                    <input id="contact-last-name" name="lastName" ng-model="contact.lastName" required/>
-                </md-input-container>
-                <span class="form-invalid" ng-show="contactForm.lastName.$error.required">Last Name is required</span>
-            </div>
-            <div class="email">
-                <md-input-container>
-                    <label for="contact-email">Email: </label>
-                    <input id="contact-email" type="email" name="email" ng-model="contact.email" required/>
-                </md-input-container>
-                <span class="form-invalid" ng-show="contactForm.email.$error.required">Email is required</span>
-                <span class="form-invalid" ng-show="contactForm.email.$error.email">Invalid email</span>
-            </div>
-        </md-input-group>
+        <div class="name">
+            <md-input-container>
+                <label for="contact-first-name">First Name:</label>
+                <input id="contact-first-name" name="firstName" ng-model="contact.firstName" required/>
+            </md-input-container>
+            <span class="form-invalid" ng-show="contactForm.firstName.$error.required">First Name is required</span>
+            <md-input-container>
+                <label for="contact-last-name">Last Name:</label>
+                <input id="contact-last-name" name="lastName" ng-model="contact.lastName" required/>
+            </md-input-container>
+            <span class="form-invalid" ng-show="contactForm.lastName.$error.required">Last Name is required</span>
+        </div>
+        <div class="email">
+            <md-input-container>
+                <label for="contact-email">Email:</label>
+                <input id="contact-email" type="email" name="email" ng-model="contact.email" required/>
+            </md-input-container>
+            <span class="form-invalid" ng-show="contactForm.email.$error.required">Email is required</span>
+            <span class="form-invalid" ng-show="contactForm.email.$error.email">Invalid email</span>
+        </div>
+        <div class="phone">
+            <md-input-container>
+                <label for="contact-phone">Phone:</label>
+                <input id="contact-phone" type="number" name="phone" ng-model="contact.phoneNumber" required ng-maxlength="10" ng-minlength="10"/>
+            </md-input-container>
+            <span class="form-invalid" ng-show="contactForm.phone.$error.required">Phone is required</span>
+            <span class="form-invalid" ng-show="contactForm.phone.$error.minlength">Phone must be 10 digits</span>
+            <span class="form-invalid" ng-show="contactForm.phone.$error.maxlength">Phone must be 10 digits</span>
+        </div>
 
         <div class="controls">
             <md-button class="md-primary" ng-click="reset()">Reset</md-button>

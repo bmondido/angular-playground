@@ -1,16 +1,16 @@
-<div>
+<div style="position:fixed;">
     <!-- query object allows the below filter to make a subset the contacts array on the fly. Radical! -->
     <md-input-container>
         <label>Search</label>
         <input ng-model="query">
     </md-input-container>
 </div>
-<div>
+<div style="padding-top: 60px;">
     <md-content>
         <md-grid-list md-cols="2" md-row-height="4:3">
             <md-grid-tile ng-repeat="contact in contacts | filter:query">
                 <md-grid-tile-header>{{contact.firstName}}</md-grid-tile-header>
-                <a ng-href="#/contacts/{{contact.id}}"><img ng-src="{{contact.image}}"> </a>
+                <a ng-href="#/contacts/{{contact.id}}"><img class="contact-image" ng-src="{{contact.image}}"> </a>
             </md-grid-tile>
         </md-grid-list>
     </md-content>
